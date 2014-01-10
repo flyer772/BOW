@@ -16,7 +16,8 @@ ActiveRecord::Schema.define(version: 20140108003036) do
   create_table "applications", force: true do |t|
     t.string   "city"
     t.string   "river"
-    t.string   "school"
+    t.string   "school_name"
+    t.string   "school_address"
     t.string   "contact_name"
     t.string   "contact_title"
     t.string   "contact_email"

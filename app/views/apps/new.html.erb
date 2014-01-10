@@ -1,0 +1,66 @@
+<% @page_title = "Submit Application" %>
+
+<div class="row">
+	<div class="col-sm-8 col-sm-push-4">
+	
+	<h2>Host City Application</h2>
+	<%= form_for(:app, :url => apps_path, :html => {:method => :post}) do |f| %> <!--url allows you to send all the info to the action specified-->
+		<%= error_messages_for(@app) %>
+		<table summary="Content form fields">
+	
+			<tr>
+				<th><%=f.label(:city)%></th>
+				<td><%= f.text_field(:city) %></td>
+			</tr>
+			
+			<tr>
+				<th><%=f.label(:river)%></th>
+				<td><%= f.text_field(:river) %></td>
+			</tr>
+			
+	
+			<tr>
+	 	 		<th><%= f.label(:school_name)%></th>
+	  			<td><%= f.text_field(:school_name)%></td>
+	  		</tr>
+	
+	  		<tr>
+	 	 		<th><%= f.label(:school_address)%></th>
+	  			<td><%= f.text_field(:school_address)%></td>
+	  		</tr>
+	  		
+	  			<tr>
+	 	 		<td><br /></td>
+	  		</tr>
+	  		
+	  		<tr>
+	 	 		<td>School Contact</td>
+	  		</tr>	
+	  		
+	  		<tr>
+	 	 		<th><%= f.label(:contact_title, "Title")%></th>
+	  			<td><%= f.text_field(:contact_title)%></td>
+	  		</tr>
+	  		
+	  		<tr>
+	 	 		<th><%= f.label(:contact_email, "Email")%></th>
+	  			<td><%= f.text_field(:contact_email)%></td>
+	  		</tr>
+	  		
+	  		<tr>
+	 	 		<th><%= f.label(:phone_num, "Phone Number")%></th>
+	  			<td><%= f.text_field(:phone_num)%></td>
+	  		</tr>
+
+	  		<tr>
+				<th><%=f.label(:paragraph)%></th>
+				<td><%= f.text_area(:paragraph, :size => '25x5') %></td>
+			</tr>
+	  	</table>
+	
+		
+			<%= submit_tag("Submit", :class =>"btn btn-primary") %>
+
+	<%end%>
+	</div>
+</div>
