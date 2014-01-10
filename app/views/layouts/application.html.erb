@@ -22,12 +22,12 @@
 	    		</div>
 	    		<div class="collapse navbar-collapse" id="collapse">
 			    	<ul class="nav navbar-nav">
-			        	<li class="active"><a href="#">Home</a></li>
+			        	<li class="<%= is_active?(home_index_path)%>"><a href="<%=home_index_path%>">Home</a></li>
 			        	<li><a href="#">BOW Team</a></li>
 			        	<li><a href="#">BOW Mission</a></li>
 			        	<li><a href="#">BOW Cities</a></li>
 			        	<li><a href="#">BOW Calendar</a></li>
-			        	<li><a href="#">Apply to be a BOW Host City</a></li>  
+			        	<li class="<%= is_active?(new_app_path)%>"><a href="<%=new_app_path%>">Apply to be a BOW Host City</a></li>  
 		        	</ul> 
 		        </div>
 	        </nav> 
