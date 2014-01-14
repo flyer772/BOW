@@ -4,7 +4,7 @@
 	<div class="col-sm-8 col-sm-push-4">
 	
 	<h2>Host City Application</h2>
-	<%= form_for(:app, :url => apps_path, :html => {:method => :post}) do |f| %> <!--url allows you to send all the info to the action specified-->
+	<%= form_for(:application, :url => apps_path, :html => {:method => :post}) do |f| %> <!--url allows you to send all the info to the action specified-->
 		<%= error_messages_for(@app) %>
 		<table summary="Content form fields">
 	
