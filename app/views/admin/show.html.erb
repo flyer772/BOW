@@ -1,0 +1,62 @@
+	<div class="col-sm-8 col-sm-push-4">
+	
+	<h2>Application</h2>
+		<table summary="Content form fields">
+	
+			<tr>
+				<th>City</th>
+				<td><%= @app.city %></td>
+			</tr>
+			
+			<tr>
+				<th>River</th>
+				<td><%= @app.river %></td>
+			</tr>
+			
+	
+			<tr>
+	 	 		<th>School Name</th>
+	  			<td><%= @app.school_name%></td>
+	  		</tr>
+	
+	  		<tr>
+	 	 		<th>School Address</th>
+	  			<td><%= @app.school_address %></td>
+	  		</tr>
+	  		
+	  			<tr>
+	 	 		<td><br /></td>
+	  		</tr>
+	  		
+	  		<tr>
+	 	 		<td>School Contact</td>
+	  		</tr>	
+	  		
+	  		<tr>
+	 	 		<th>Title</th>
+	  			<td><%= @app.contact_title %></td>
+	  		</tr>
+	  		
+	  		<tr>
+	 	 		<th>Email</th>
+	  			<td><%= @app.contact_email%></td>
+	  		</tr>
+	  		
+	  		<tr>
+	 	 		<th>Phone Number</th>
+	  			<td><%= @app.phone_num %></td>
+	  		</tr>
+
+	  		<tr>
+				<th>Paragraph</th>
+				<td><%= @app.paragraph %></td>
+			</tr>
+			<tr>
+				<td>
+				<%= link_to("Done", admin_path,:class => 'btn btn-info') %>
+				<%= link_to("Approve", admin_path,:class => 'btn btn-success') %>
+	  			</td>
+	  		</tr>
+	  	</table>
+	</div>
+</div>

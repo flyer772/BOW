@@ -1,7 +1,7 @@
 BOW::Application.routes.draw do
   get "home/index"
   resources :apps, :only =>[:new, :create]
-  resources :admin, :only =>[:index]
+  resources :admin, :only =>[:index, :show]
   devise_for :users
   root :to => "home#index"
   # The priority is based upon order of creation: first created -> highest priority.
