@@ -1,0 +1,12 @@
+<% @apps.each do |app|%> <!--start loop-->
+<div class="row">
+	<div class="col-sm-8">
+		<%= app.contact_email %>
+	</div>
+	<div class="col-sm-4">
+		<button type="button" class="btn btn-info">View</button>
+		<button type="button" class="btn btn-success">Approve</button>
+		<button type="button" class="btn btn-danger">Delete</button>
+	</div>
+</div>
+<%end%>

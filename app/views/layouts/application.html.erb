@@ -27,7 +27,12 @@
 			        	<li><a href="#">BOW Mission</a></li>
 			        	<li><a href="#">BOW Cities</a></li>
 			        	<li><a href="#">BOW Calendar</a></li>
-			        	<li class="<%= is_active?(new_app_path)%>"><a href="<%=new_app_path%>">Apply to be a BOW Host City</a></li>  
+			        	<li class="<%= is_active?(new_app_path)%>"><a href="<%=new_app_path%>">Apply to be a BOW Host City</a></li>
+			        	<% if user_signed_in? %>
+			        		<% if current_user.has_role? :admin %>
+			        			<li><a href="#">Manage Applications</a></li>
+			        		<%end%>
+			        	<%end%>  
 		        	</ul> 
 		        </div>
 	        </nav> 
